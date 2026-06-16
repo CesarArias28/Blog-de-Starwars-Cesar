@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 
 export const Card = ({ item, type }) => {
@@ -83,6 +84,23 @@ export const Card = ({ item, type }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  item: PropTypes.shape({
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    gender: PropTypes.string,
+    hair_color: PropTypes.string,
+    eye_color: PropTypes.string,
+    population: PropTypes.string,
+    terrain: PropTypes.string,
+    climate: PropTypes.string,
+    model: PropTypes.string,
+    cost_in_credits: PropTypes.string,
+    passengers: PropTypes.string
+  }).isRequired,
+  type: PropTypes.string.isRequired
 };
 
 export default Card;

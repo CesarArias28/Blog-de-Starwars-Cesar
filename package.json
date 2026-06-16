@@ -1,0 +1,11 @@
+{
+  "name": "blog-starwars-root",
+  "version": "1.0.0",
+  "description": "Star Wars Blog Root Configuration",
+  "scripts": {
+    "start": "npm run start --prefix Blog-de-Starwars-Cesar",
+    "dev": "npm run dev --prefix Blog-de-Starwars-Cesar",
+    "build": "npm run build --prefix Blog-de-Starwars-Cesar",
+    "lint": "npm run lint --prefix Blog-de-Starwars-Cesar"
+  }
+}
